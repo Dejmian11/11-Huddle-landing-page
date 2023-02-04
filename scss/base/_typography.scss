@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+  color: var(--clr-neutral-900);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+}
+
+.heading-primary {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-heading-primary);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.5;
+}

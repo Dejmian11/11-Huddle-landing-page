@@ -1,0 +1,28 @@
+@use 'mixins' as *;
+
+:root {
+	--clr-primary-400: hsl(257, 40%, 49%);
+
+	--clr-accent-300: hsl(322, 100%, 66%);
+	--clr-accent-400: hsl(300, 69%, 71%);
+
+	--clr-neutral-900: hsl(0, 0%, 100%);
+
+	--ff-body: 'Open Sans', sans-serif;
+	--ff-headings: 'Poppins', sans-serif;
+
+	--fs-300: 0.75rem;
+	--fs-400: 1rem;
+	--fs-600: 1.5rem;
+
+	@include respond(md) {
+		--fs-400: 1.125rem;
+		--fs-600: 2.5rem;
+	}
+
+	--fs-body: var(--fs-400);
+	--fs-heading-primary: var(--fs-600);
+
+	--fw-regular: 400;
+	--fw-semi-bold: 600;
+}

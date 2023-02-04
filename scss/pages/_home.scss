@@ -1,0 +1,57 @@
+@use '../abstracts/' as *;
+
+.home-section {
+	min-height: 100vh;
+	background-color: var(--clr-primary-400);
+	background-image: url(./images/bg-mobile.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	@include respond(md) {
+		background-image: url(./images/bg-desktop.svg);
+		background-size: cover;
+	}
+
+	@include respond(xl) {
+		background-size: contain;
+	}
+
+	&__container {
+		display: grid;
+		gap: 3.75rem;
+
+		margin-block: 4rem;
+
+		@include respond(lg) {
+			grid-template-columns: 4fr 3fr;
+			gap: 3.375rem;
+			align-items: start;
+			margin-block: 5rem 1.5rem;
+		}
+	}
+
+	&__content {
+		display: grid;
+		gap: 1rem;
+		justify-items: center;
+		text-align: center;
+
+		@include respond(lg) {
+			gap: 1.5rem;
+			justify-items: start;
+			text-align: left;
+		}
+
+		@include respond(xl) {
+			margin-top: 1.75rem;
+		}
+	}
+
+	&__description {
+		margin-bottom: 0.5rem;
+
+		@include respond(lg) {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.section {
+  padding-block: 1.675rem 2.5rem;
+
+  @include respond(lg) {
+    padding-block: 3rem;
+  }
+}
+
+.wrapper {
+	padding-inline: 2.25rem;
+	margin-inline: auto;
+
+	@include respond(sm) {
+    max-width: 540px;
+	}
+  
+	@include respond(md) {
+    max-width: 720px;
+	}
+  
+	@include respond(lg) {
+    max-width: 960px;
+	}
+  
+	@include respond(xl) {
+    padding-inline: 1rem;
+		max-width: 1275px;
+	}
+}
