@@ -4,11 +4,11 @@
   display: grid;
   justify-content: start;
 
-	&__logo {
-		max-width: 8rem;
+  &__logo {
+    max-width: 8rem;
 
     @include respond(md) {
       max-width: 13rem;
     }
-	}
+  }
 }
